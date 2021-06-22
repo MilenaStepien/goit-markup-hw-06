@@ -379,12 +379,83 @@
         </li>
         </ul>
     </li>
+    <li class="footer-item join-us">zapisz się do newslettera
+    <div>
+        <form method="POST" class="newsletter-form">
+            <div class="newsletter-input">
+                <input type="email" name="email" placeholder="E-mail" class="newsletter-e-mail" />
+                    <button class="newsletter-btn" type="submit">
+                    Zapisz się<svg class="icon-send">
+                        <use href="./images/sprite-send.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    </li>
 </ol>
     </div>
        </footer>
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
     <button type="button" class="close-btn" data-modal-close>x</button>
+
+
+
+
+
+<form method="POST" class="modal-form">
+    <h2 class="modal-form-title">
+        Zostaw swoje dane w formularzu poniżej
+    </h2>
+    <label for="name" class="modal-label">Imie</label>
+    <div class="modal-input-wrapper">
+        <input type="text" name="name" id="name" class="modal-input" required />
+        <div class="modal-form-icon">
+            <svg class="icon-name">
+                <use href="./images/sprite-modal.svg#icon-icon-name"></use>
+            </svg>
+        </div>
+    </div>
+
+    <label for="telefon" class="modal-label">Telefon</label>
+    <div class="modal-input-wrapper">
+        <input type="tel" name="telefon" id="telefon" class="modal-input" required />
+        <div class="modal-form-icon">
+            <svg class="icon-phone">
+                <use href="./images/sprite-modal.svg#icon-icon-phone"></use>
+            </svg>
+        </div>
+    </div>
+    <label for="e-mail" class="modal-label">E-mail</label>
+    <div class="modal-input-wrapper">
+        <input type="email" name="e-mail" id="e-mail" class="modal-input" />
+        <div class="modal-form-icon">
+            <svg class="icon-e-mail">
+                <use href="./images/sprite-modal.svg#icon-icon-e-mail"></use>
+            </svg>
+        </div>
+    </div>
+    <label for="komentarz" class="modal-label">Komentarz</label>
+    <textarea name="komentarz" id="komentarz" cols="30" rows="10" class="modal-textarea"
+        placeholder="Wprowadź tekst"></textarea>
+    <div class="modal-policy-wrapper">
+        <div class="modal-disclaimer-wrapper">
+            <input type="checkbox" id="checkbox" class="modal-checkbox visually-hidden" required />
+            <label for="checkbox" class="policy-label-text">Oświadczam iż akceptuję &nbsp;
+                <a href="#" class="modal-policy-text-link">Regulamin </a>
+                &nbsp;i&nbsp;
+                <a href="#" class="modal-policy-text-link">
+                    Politykę Prywatności</a>
+
+                .</label>
+        </div>
+        <button class="modal-btn-form" type="submit">Wyślij</button>
+    </div>
+</form>
+
+
+
 </div>
 </div>
 <script src="./js/modaj.js"></script>
