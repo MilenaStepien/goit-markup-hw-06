@@ -335,7 +335,7 @@
     <footer class="footer">
         <div class="container">
 <ol class="list footer-list">
-    <li class="footer-item">
+    <li>
                 <a class="navigation-logo navigation-logo-footer link" href="#"><span class="logo-first-part">Web</span><span class="logo-second-part-two">Studio</span></a>
     <address class="address">
         <ul class="list address-list">
@@ -347,7 +347,7 @@
         </ul>
             </address>
     </li>
-    <li class="footer-item join-us">dołącz do nas
+    <li class="join-us">dołącz do nas
         <ul class="list social-media">
         <li class="social-media-item">
             <a href="https://instagram.com">
@@ -378,6 +378,20 @@
             </a>
         </li>
         </ul>
+    </li>
+    <li class="newsletter">zapisz się do newslettera
+    <div>
+        <form method="POST" class="newsletter-form">
+            <div class="newsletter-input">
+                <input type="email" name="email" placeholder="E-mail" class="newsletter-e-mail" />
+                <button class="newsletter-btn" type="submit">
+                    Zapisz się<svg class="icon-send" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
     </li>
 </ol>
     </div>
@@ -420,7 +434,6 @@
         <label for="comment" class="modal-label">Komentarz</label>
         <textarea name="comment" id="comment" cols="30" rows="10" class="modal-textarea"
             placeholder="Wprowadź tekst"></textarea>
-        <div class="modal-policy-wrapper">
             <div class="modal-disclaimer-wrapper">
                 <input type="checkbox" id="checkbox" class="modal-checkbox visually-hidden" required />
                 <label for="checkbox" class="policy-label-text">Oświadczam iż akceptuję &nbsp;
@@ -428,11 +441,9 @@
                     &nbsp;i&nbsp;
                     <a href="#" class="modal-policy-text-link">
                         Politykę Prywatności</a>
-    
                     .</label>
             </div>
             <button class="modal-btn-form" type="submit">Wyślij</button>
-        </div>
     </form>
 </div>
 </div>
